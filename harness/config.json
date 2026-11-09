@@ -1,0 +1,39 @@
+{
+  "_help": "every key, its allowed values and what each CLI is given: harness/help/config.md",
+  "base_branch": "main",
+  "test_cmd": "uv run pytest -q",
+  "setup_cmd": "uv sync",
+  "copy_files": [],
+  "max_review_rounds": 3,
+  "max_role_minutes": 180,
+  "gates": {
+    "approve": "human",
+    "merge": "human"
+  },
+  "agents": {
+    "spec_author": {
+      "harness": "claude",
+      "model": "",
+      "effort": "extra",
+      "permissions": "guarded"
+    },
+    "spec_reviewer": {
+      "harness": "codex",
+      "model": "",
+      "effort": "extra",
+      "permissions": "guarded"
+    },
+    "implementer": {
+      "harness": "claude",
+      "model": "",
+      "effort": "high",
+      "permissions": "guarded"
+    },
+    "reviewer": {
+      "harness": "codex",
+      "model": "",
+      "effort": "extra",
+      "permissions": "guarded"
+    }
+  }
+}

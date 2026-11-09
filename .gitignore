@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+
+# secrets and agent-local state (never commit)
+.env
+.claude/settings.local.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# node
+node_modules/

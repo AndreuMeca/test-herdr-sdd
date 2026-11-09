@@ -1,0 +1,9 @@
+# Lint and format settings for the launcher only; a project's own ruff config is not affected.
+line-length = 120
+target-version = "py39"
+
+[lint]
+select = ["E", "W", "F", "N", "B", "UP", "SIM", "C90"]
+
+[lint.mccabe]
+max-complexity = 12
